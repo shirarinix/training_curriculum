@@ -28,7 +28,7 @@ class CalendarsController < ApplicationController
     @week_days = []
 
     @plans = Plan.where(date: @todays_date..@todays_date + 7)
-
+    
     7.times do |x|
       plans = []
       plan = @plans.map do |plan|
